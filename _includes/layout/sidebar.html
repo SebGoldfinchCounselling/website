@@ -1,0 +1,39 @@
+{% comment %}
+
+	Slate by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+
+	Name:
+
+		Sidebar
+
+	Description:
+
+		Generates the sidebar content.
+
+	Example:
+
+		{% include layout/sidebar.html %}
+
+{% endcomment %}
+
+<!-- Sidebar -->
+	<div class="sidebar">
+
+		{% capture tagvar %}{{page.testimonialtagvar}}{% endcapture %}
+                        {% include components/testimonials.html customtag=tagvar%}
+			
+		<hr />
+		<section>
+                    <h2>Experience and Standards</h2>
+			<a href="/about-me/professional-standards.html" class="image fit"><img src="{{ site.baseurl }}/images/uploads/tcugb-logo1.png" alt="Tai Chi Union of Great Britain Logo" /></a>
+			
+                        <p>Christie Butterick is an Advanced instructor with the <b>Tai Chi Union of Great Britain(TCUGB)</b><br/> The TCUGB is the UK body governing authentic Tai Chi  in the UK, advanced accrediation confirms that a teacher has experience, teaches to high standards of practise and engages in continual learning. </p>
+			<footer>
+				<ul class="actions">
+					<li><a href="/about-us/professional-standards.html" class="button small">Learn More</a></li>
+				</ul>
+			</footer>
+		</section>
+	</div>
